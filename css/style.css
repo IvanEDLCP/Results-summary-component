@@ -1,5 +1,4 @@
 /* Variables */
-
 :root {
     /* Primary colors */
     --Light-red: hsl(0, 100%, 67%);
@@ -60,7 +59,7 @@ body {
     font-size: 20px;
 }
 
-.result-main-porcentage {
+.result-main-percentage {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -72,7 +71,7 @@ body {
     text-align: center;
 }
 
-.result-main-porcentage > b {
+.result-main-percentage > b {
     font-size: 60px;
     color: white;
 }
@@ -86,6 +85,7 @@ body {
 .result-connotation {
     margin: 0 18px 30px;
     font-size: var(--paragraph);
+    text-align: center;
 }
 
 
@@ -122,7 +122,7 @@ body {
     top: -5px
 }
 
-.summary-item__porcentage b {
+.summary-item__percentage b {
     color: var(--Dark-gray-blue);
 }
 
@@ -163,6 +163,14 @@ body {
 /* Attribution */
 .attribution {
     display: none;
+    font-size: 12px; 
+    position: absolute;
+    bottom: 20px;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Dark-gray-blue);
 }
 
 
@@ -186,10 +194,9 @@ body {
     .result {
         width: 50%;
         border-radius: 30px;
-        text-align: center;
     }
 
-    .result-main-porcentage {
+    .result-main-percentage {
         margin: 20px 0 20px;
     }
 
@@ -208,8 +215,13 @@ body {
     }
 
     .continue-btn {
-        padding: 15px;
+        padding: 12px;
         margin: 18px 0;
+    }
+
+
+    .attribution {
+        display: block;
     }
 
 }
